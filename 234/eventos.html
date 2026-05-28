@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://copilot.microsoft.com/th/id/BCO.61c845ea-be4a-4f2f-91f5-a1a6064da904.png">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos | Zerc Motors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo"><span>Z</span>erc Motors</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top zm-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand zm-logo" href="index.html">
+      <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+    </a>
+    <button class="navbar-toggler zm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="toggler-line"></span><span class="toggler-line"></span><span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link zm-navlink" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="portfolio.html">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="agendamento.html">Agendamento</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink active" href="eventos.html">Eventos</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="index.html#produtos" class="zm-icon-btn"><i class="fas fa-shopping-bag"></i><span class="cart-badge">0</span></a>
+        <div class="zm-socials d-none d-lg-flex gap-2">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container position-relative">
+    <p class="page-hero-breadcrumb mb-3"><a href="index.html">Home</a> / Eventos</p>
+    <span class="section-eyebrow">Agenda Premium</span>
+    <h1 class="page-hero-title">Eventos <span class="accent-red">Exclusivos</span><br/>Zerc Motors</h1>
+    <p class="section-subtitle mt-3">Lançamentos, eventos VIP e experiências únicas com as marcas BMW e Audi.</p>
+  </div>
+</section>
+
+<!-- FEATURED EVENT -->
+<section class="zm-section" style="background: var(--dark);">
+  <div class="container">
+    <span class="section-eyebrow">Destaque do Mês</span>
+    <div class="row gy-4 align-items-center mb-5">
+      <div class="col-lg-7">
+        <div class="zm-portfolio-card" style="aspect-ratio:16/9;">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=80" alt="Evento em Destaque"/>
+          <div class="portfolio-info" style="transform:none;opacity:1;">
+            <div class="event-date-badge" style="position:relative;display:inline-flex;align-items:center;gap:8px;background:var(--red);padding:0.5rem 1rem;border-radius:6px;margin-bottom:0.75rem;">
+              <span class="event-day" style="font-size:1.2rem;">28</span><span class="event-month">JUN</span>
+            </div>
+            <span class="portfolio-brand">Evento VIP · São Paulo</span>
+            <div class="portfolio-model">BMW M Night — Lançamento M5 Touring</div>
+            <div class="portfolio-price">Convidados Selecionados · Showroom Zerc Motors</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 ps-lg-5">
+        <h2 class="section-title">BMW M Night — <span class="accent-red">Lançamento Exclusivo</span></h2>
+        <p class="section-text">Uma noite dedicada aos apaixonados pela filosofia M. O novo BMW M5 Touring será revelado em primeira mão para clientes selecionados da Zerc Motors, com uma experiência sensorial única.</p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2" style="color:var(--white60);font-size:.88rem;"><i class="fas fa-calendar-alt me-2" style="color:var(--red);"></i> 28 de Junho de 2025, às 20h</li>
+          <li class="mb-2" style="color:var(--white60);font-size:.88rem;"><i class="fas fa-map-marker-alt me-2" style="color:var(--red);"></i> Showroom Zerc Motors — São Paulo</li>
+          <li class="mb-2" style="color:var(--white60);font-size:.88rem;"><i class="fas fa-users me-2" style="color:var(--red);"></i> Evento fechado · 80 convidados</li>
+          <li style="color:var(--white60);font-size:.88rem;"><i class="fas fa-glass-cheers me-2" style="color:var(--red);"></i> Coquetel e jantar inclusos</li>
+        </ul>
+        <a href="agendamento.html" class="btn zm-btn-primary">Solicitar Convite</a>
+      </div>
+    </div>
+
+    <!-- EVENTS GRID -->
+    <div class="text-center mb-5 mt-5">
+      <span class="section-eyebrow">Próximos Eventos</span>
+      <h2 class="section-title">Agenda Completa 2025</h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Event 1 -->
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://s1.cdn.autoevolution.com/images/news/gallery/bmw-m-motorsport-monsters-presented-in-munich-ahead-of-season-start_25.jpg" alt="Evento BMW"/>
+            <div class="event-date-badge">
+              <span class="event-day">12</span>
+              <span class="event-month">Jul</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">BMW · Test Drive Experience</span>
+            <div class="event-title">BMW M Weekend — Pista Oficial</div>
+            <div class="event-desc">Final de semana exclusivo com test drives na pista de Interlagos. Vagas limitadas para clientes VIP.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Reservar Vaga</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col-sm-6 col-lg-4 fade-in fade-in-delay-1">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80" alt="Evento Audi"/>
+            <div class="event-date-badge">
+              <span class="event-day">19</span>
+              <span class="event-month">Jul</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">Audi · Lançamento</span>
+            <div class="event-title">Audi RS Reveal — Q8 RS Edition</div>
+            <div class="event-desc">Revelação exclusiva do novo Audi Q8 RS Edition no showroom Zerc Motors. Jantar de gala e apresentação técnica.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Solicitar Convite</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col-sm-6 col-lg-4 fade-in fade-in-delay-2">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Car Show"/>
+            <div class="event-date-badge">
+              <span class="event-day">02</span>
+              <span class="event-month">Ago</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">Zerc · Premium Car Show</span>
+            <div class="event-title">Zerc Motors Premium Car Show 2025</div>
+            <div class="event-desc">O maior evento de carros de luxo da Zerc Motors. Mais de 50 veículos expostos, concurso de elegância e muito mais.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Garantir Ingresso</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80" alt="Track Day"/>
+            <div class="event-date-badge">
+              <span class="event-day">16</span>
+              <span class="event-month">Ago</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">BMW & Audi · Track Day</span>
+            <div class="event-title">Zerc Track Day — Interlagos</div>
+            <div class="event-desc">Dia inteiro na pista com instrutores profissionais. BMW M4 e Audi R8 à sua disposição. Experiência única.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Inscrever-se</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="col-sm-6 col-lg-4 fade-in fade-in-delay-1">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=800&q=80" alt="VIP Night"/>
+            <div class="event-date-badge">
+              <span class="event-day">06</span>
+              <span class="event-month">Set</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">Zerc · VIP Night</span>
+            <div class="event-title">Zerc VIP Night — Clientes Gold</div>
+            <div class="event-desc">Evento exclusivo para clientes Gold da Zerc Motors com degustação de vinhos, música ao vivo e pré-estreia de novos modelos.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="col-sm-6 col-lg-4 fade-in fade-in-delay-2">
+        <div class="zm-event-card">
+          <div class="event-img-wrap">
+            <img src="https://copilot.microsoft.com/th/id/BCO.567790a5-c337-49ab-bb47-d7058cbe787e.png" alt="Concessionaria"/>
+            <div class="event-date-badge">
+              <span class="event-day">20</span>
+              <span class="event-month">Set</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">BMW · Aniversário Zerc</span>
+            <div class="event-title">16 Anos Zerc Motors — Festa Exclusiva</div>
+            <div class="event-desc">Comemorações do aniversário da Zerc Motors com ofertas especiais, sorteios e revelações exclusivas de novos modelos 2026.</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-3">Participar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER CTA -->
+<section class="zm-section text-center" style="background: var(--dark2); border-top: 1px solid var(--white10);">
+  <div class="container" style="max-width:600px;">
+    <span class="section-eyebrow">Não Perca Nada</span>
+    <h2 class="section-title">Receba Convites Exclusivos</h2>
+    <p class="section-text text-center">Cadastre-se na nossa lista VIP e seja o primeiro a receber convites para eventos exclusivos, lançamentos e ofertas especiais.</p>
+    <div class="d-flex gap-2 mt-4 flex-wrap justify-content-center">
+      <input type="email" class="form-control zm-input" style="max-width:320px;" placeholder="Seu e-mail VIP"/>
+      <button class="btn zm-btn-primary">Entrar na Lista VIP <i class="fas fa-crown ms-2"></i></button>
+    </div>
+    <p style="font-size:0.72rem;color:var(--white60);margin-top:1rem;">Suas informações são tratadas com total confidencialidade. Cancele quando quiser.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="zm-footer">
+  <div class="container">
+    <div class="row gy-4 mb-5">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">
+          <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+        </div>
+        <p class="footer-text">Concessionária premium especializada em BMW e Audi. Excelência em cada detalhe desde 2009.</p>
+        <div class="zm-socials d-flex gap-3 mt-3">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Navegação</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Redes Sociais</h6>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-instagram me-1"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-facebook me-1"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-youtube me-1"></i> YouTube</a></li>
+          <li><a href="#"><i class="fab fa-whatsapp me-1"></i> WhatsApp</a></li>
+          <li><a href="#"><i class="fab fa-linkedin me-1"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Contato Rápido</h6>
+        <p class="footer-text">Av. das Nações, 1000 · São Paulo, SP</p>
+        <p class="footer-text">(11) 9999-8888 | contato@zercmotors.com.br</p>
+        <p class="footer-text">Seg–Sex: 9h–19h · Sáb: 9h–14h</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0 footer-copy">&copy; 2025 Zerc Motors. Todos os direitos reservados.</p>
+      <p class="mb-0 footer-copy">Concessionária de Luxo BMW &amp; Audi</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

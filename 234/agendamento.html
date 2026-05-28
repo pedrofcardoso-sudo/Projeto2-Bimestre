@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://copilot.microsoft.com/th/id/BCO.61c845ea-be4a-4f2f-91f5-a1a6064da904.png">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento | Zerc Motors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo"><span>Z</span>erc Motors</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top zm-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand zm-logo" href="index.html">
+      <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+    </a>
+    <button class="navbar-toggler zm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="toggler-line"></span><span class="toggler-line"></span><span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link zm-navlink" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="portfolio.html">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink active" href="agendamento.html">Agendamento</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="eventos.html">Eventos</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="zm-icon-btn"><i class="fas fa-shopping-bag"></i><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container position-relative">
+    <p class="page-hero-breadcrumb mb-3"><a href="index.html">Home</a> / Agendamento</p>
+    <span class="section-eyebrow">Experiência Exclusiva</span>
+    <h1 class="page-hero-title">Agende seu <span class="accent-red">Test Drive</span></h1>
+    <p class="section-subtitle mt-3">Sinta a emoção de dirigir um BMW ou Audi. Escolha seu modelo e data preferida.</p>
+  </div>
+</section>
+
+<!-- SCHEDULE FORM -->
+<section class="zm-section" style="background: var(--dark);">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-7">
+        <div class="zm-schedule-card">
+          <h3 class="section-title" style="font-size:1.6rem;">Formulário de Agendamento</h3>
+          <p class="section-text mb-4">Preencha os dados abaixo e nossa equipe entrará em contato para confirmar seu horário.</p>
+          <form id="scheduleForm">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label zm-label">Nome Completo *</label>
+                <input type="text" class="form-control zm-input" placeholder="Seu nome" required/>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label zm-label">CPF *</label>
+                <input type="text" class="form-control zm-input" placeholder="000.000.000-00" required/>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label zm-label">E-mail *</label>
+                <input type="email" class="form-control zm-input" placeholder="seu@email.com" required/>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label zm-label">Telefone/WhatsApp *</label>
+                <input type="tel" class="form-control zm-input" placeholder="(11) 9 9999-9999" required/>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label zm-label">Marca de Interesse *</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check zm-radio-wrap">
+                  <input class="form-check-input zm-check" type="radio" name="marca" id="rBMW" value="BMW" checked/>
+                  <label class="form-check-label zm-check-label fw-bold" for="rBMW">
+                    <i class="fas fa-circle-dot me-1 accent-red-icon"></i> BMW
+                  </label>
+                </div>
+                <div class="form-check zm-radio-wrap">
+                  <input class="form-check-input zm-check" type="radio" name="marca" id="rAudi" value="Audi"/>
+                  <label class="form-check-label zm-check-label fw-bold" for="rAudi">
+                    <i class="fas fa-circle-dot me-1 accent-red-icon"></i> Audi
+                  </label>
+                </div>
+                <div class="form-check zm-radio-wrap">
+                  <input class="form-check-input zm-check" type="radio" name="marca" id="rAmbos" value="Ambos"/>
+                  <label class="form-check-label zm-check-label fw-bold" for="rAmbos">
+                    <i class="fas fa-circle-dot me-1 accent-red-icon"></i> Ambas
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label zm-label">Modelo Desejado *</label>
+              <select class="form-select zm-input" required>
+                <option value="">Selecione o modelo</option>
+                <optgroup label="BMW">
+                  <option>BMW M3 Competition</option>
+                  <option>BMW M4 Competition</option>
+                  <option>BMW X5 xDrive40i</option>
+                  <option>BMW X7 M60i</option>
+                  <option>BMW Série 8 M850i</option>
+                </optgroup>
+                <optgroup label="Audi">
+                  <option>Audi R8 V10 Plus</option>
+                  <option>Audi RS6 Avant</option>
+                  <option>Audi Q8 55 TFSI</option>
+                  <option>Audi A8 L 60 TFSI</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label zm-label">Data Preferida *</label>
+                <input type="date" class="form-control zm-input" required/>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label zm-label">Horário Preferido *</label>
+                <select class="form-select zm-input" required>
+                  <option value="">Selecione</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label zm-label">Observações</label>
+              <textarea class="form-control zm-input" rows="3" placeholder="Alguma preferência especial para o test drive?"></textarea>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input zm-check" type="checkbox" id="termsCheck" required/>
+              <label class="form-check-label zm-check-label" for="termsCheck">Concordo com os Termos & Condições do test drive exclusivo Zerc Motors.</label>
+            </div>
+            <button type="submit" class="btn zm-btn-primary w-100 btn-lg">
+              Agendar Test Drive <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- INFO SIDEBAR -->
+      <div class="col-lg-5">
+        <div class="zm-schedule-card mb-4">
+          <h5 style="color:var(--white);font-family:var(--font-display);margin-bottom:1.25rem;">O que esperar do Test Drive?</h5>
+          <div class="accordion zm-accordion" id="accordionTestDrive">
+            <div class="accordion-item zm-acc-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button zm-acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#td1">
+                  <i class="fas fa-route me-2 accent-red-icon"></i> Roteiro Premium
+                </button>
+              </h2>
+              <div id="td1" class="accordion-collapse collapse show" data-bs-parent="#accordionTestDrive">
+                <div class="accordion-body zm-acc-body">
+                  Percurso de 30 minutos especialmente desenhado para explorar performance, conforto e tecnologia do veículo escolhido, com trechos urbanos e estrada.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item zm-acc-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#td2">
+                  <i class="fas fa-user-shield me-2 accent-red-icon"></i> Acompanhamento Especializado
+                </button>
+              </h2>
+              <div id="td2" class="accordion-collapse collapse" data-bs-parent="#accordionTestDrive">
+                <div class="accordion-body zm-acc-body">
+                  Um de nossos consultores certificados acompanhará todo o test drive, explicando cada tecnologia e funcionalidade do veículo em tempo real.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item zm-acc-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#td3">
+                  <i class="fas fa-glass-cheers me-2 accent-red-icon"></i> Experiência Completa
+                </button>
+              </h2>
+              <div id="td3" class="accordion-collapse collapse" data-bs-parent="#accordionTestDrive">
+                <div class="accordion-body zm-acc-body">
+                  Recepção com welcome drink no showroom, apresentação completa do veículo, test drive guiado e proposta comercial personalizada ao final.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item zm-acc-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#td4">
+                  <i class="fas fa-file-alt me-2 accent-red-icon"></i> Documentação Necessária
+                </button>
+              </h2>
+              <div id="td4" class="accordion-collapse collapse" data-bs-parent="#accordionTestDrive">
+                <div class="accordion-body zm-acc-body">
+                  CNH válida, documento de identidade e CPF. Para clientes PJ, também CNPJ da empresa. Documentos devem ser apresentados no início do test drive.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="zm-schedule-card" style="background: linear-gradient(135deg, var(--red), var(--red-dark)); border-color: var(--red);">
+          <h5 style="color:#fff;font-weight:700;margin-bottom:0.75rem;"><i class="fas fa-phone me-2"></i> Prefere ligar?</h5>
+          <p style="color:rgba(255,255,255,0.85);font-size:0.88rem;margin-bottom:1rem;">Nossa equipe está disponível de Segunda a Sábado, das 9h às 19h.</p>
+          <div style="color:#fff;font-size:1.3rem;font-weight:700;font-family:var(--font-display);">(11) 9999-8888</div>
+          <div style="color:rgba(255,255,255,0.7);font-size:0.78rem;margin-top:0.5rem;">WhatsApp disponível 24h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="zm-footer">
+  <div class="container">
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-0" style="border:none;">
+      <div class="footer-brand mb-2 mb-md-0">
+        <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+      </div>
+      <div class="d-flex gap-3 align-items-center">
+        <a href="index.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Home</a>
+        <a href="equipe.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Equipe</a>
+        <a href="portfolio.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Portfólio</a>
+        <a href="eventos.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Eventos</a>
+      </div>
+      <p class="mb-0 footer-copy">&copy; 2025 Zerc Motors</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

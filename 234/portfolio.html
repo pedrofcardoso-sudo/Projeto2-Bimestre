@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://copilot.microsoft.com/th/id/BCO.61c845ea-be4a-4f2f-91f5-a1a6064da904.png">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Zerc Motors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo"><span>Z</span>erc Motors</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top zm-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand zm-logo" href="index.html">
+      <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+    </a>
+    <button class="navbar-toggler zm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="toggler-line"></span><span class="toggler-line"></span><span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link zm-navlink" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink active" href="portfolio.html">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="agendamento.html">Agendamento</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="eventos.html">Eventos</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="zm-icon-btn"><i class="fas fa-search"></i></a>
+        <a href="index.html#produtos" class="zm-icon-btn"><i class="fas fa-shopping-bag"></i><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container position-relative">
+    <p class="page-hero-breadcrumb mb-3"><a href="index.html">Home</a> / Portfólio</p>
+    <span class="section-eyebrow">Curadoria Exclusiva</span>
+    <h1 class="page-hero-title">Nosso <span class="accent-red">Portfólio</span><br/>de Veículos Premium</h1>
+    <p class="section-subtitle mt-3">Cada veículo selecionado com critério de excelência para os clientes mais exigentes.</p>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<section class="zm-section" style="background: var(--dark);">
+  <div class="container">
+    <div class="product-filters d-flex justify-content-center gap-2 flex-wrap mb-5">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bmw">BMW</button>
+      <button class="filter-btn" data-filter="audi">Audi</button>
+    </div>
+
+    <div class="row g-3" id="productGrid">
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in" data-cat="bmw">
+        <div class="zm-portfolio-card">
+          <img src="https://www.topgear.com/sites/default/files/2024/10/1-BMW-M4-review-2024-UK.jpg?w=892&h=502"  width="500" height="500" alt="BMW M4" class="img-fluid" alt="BMW M4"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">BMW · Edição Limitada</span>
+            <div class="portfolio-model">BMW M4 Competition</div>
+            <div class="portfolio-price">R$ 689.000 · 510 cv · 0-100 em 3,9s</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-1" data-cat="bmw">
+        <div class="zm-portfolio-card">
+          <img src="https://cdn.motor1.com/images/mgl/KkBoA/s3/2019-bmw-x5-xdrive40i.webp"  width="400" height="400"alt="BMW X5"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">BMW · SUV Premium</span>
+            <div class="portfolio-model">BMW X5 xDrive40i</div>
+            <div class="portfolio-price">R$ 545.000 · 340 cv · AWD</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-2" data-cat="audi">
+        <div class="zm-portfolio-card">
+          <img src="https://cdn.motor1.com/images/mgl/g4MJbN/s3/audi-rs6-avant-performance.webp"  width="400" height="400"alt="Audi RS6"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">Audi · Avant Sport</span>
+            <div class="portfolio-model">Audi RS6 Avant</div>
+            <div class="portfolio-price">R$ 720.000 · 600 cv · 0-100 em 3,6s</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in" data-cat="audi">
+        <div class="zm-portfolio-card">
+          <img src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/LOCNHEVBLVOFFCHOSYAVXVXBVQ.jpg?auth=9bb45ae885fa7fdb77a36a79113d62649f5b4516ff5eb4a9c271fa0b860e1c78&width=1600&height=872" width="400" height="400" alt="Audi R8"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">Audi · Superesportivo</span>
+            <div class="portfolio-model">Audi R8 V10 Plus</div>
+            <div class="portfolio-price">R$ 1.200.000 · 620 cv · 0-100 em 3,2s</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-1" data-cat="bmw">
+        <div class="zm-portfolio-card">
+          <img src="https://cdn.motor1.com/images/mgl/18qYW/s3/bmw-serie-8-gran-coupe-2020.webp"  width="400" height="400" alt="BMW Série 8"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">BMW · Gran Coupé</span>
+            <div class="portfolio-model">BMW Série 8 M850i</div>
+            <div class="portfolio-price">R$ 890.000 · 530 cv · Coupé de Luxo</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-2" data-cat="audi">
+        <div class="zm-portfolio-card">
+          <img src="https://cdn.motor1.com/images/mgl/vR79v/s3/audi-q8-tfsi-e-quattro-2020.webp"  width="400" height="400" alt="Audi Q8"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">Audi · SUV Topo de Linha</span>
+            <div class="portfolio-model">Audi Q8 55 TFSI</div>
+            <div class="portfolio-price">R$ 680.000 · 340 cv · AWD Quattro</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in" data-cat="bmw">
+        <div class="zm-portfolio-card">
+          <img src="https://cdn.motor1.com/images/mgl/R09nm/s3/bmw-m3-2021-im-test.webp"  width="400" height="400" alt="BMW M3"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">BMW · M Division</span>
+            <div class="portfolio-model">BMW M3 Competition</div>
+            <div class="portfolio-price">R$ 620.000 · 510 cv · Sedan Esportivo</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-1" data-cat="audi">
+        <div class="zm-portfolio-card">
+          <img src="https://c.encycarpedia.com/ci/12781.jpg"  width="400" height="400" alt="Audi A8"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">Audi · Sedan Premium</span>
+            <div class="portfolio-model">Audi A8 L 60 TFSI</div>
+            <div class="portfolio-price">R$ 950.000 · 460 cv · Flagship Sedan</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 product-card-wrap fade-in fade-in-delay-2" data-cat="bmw">
+        <div class="zm-portfolio-card">
+          <img src="https://www.piccoliautomoveis.com.br/upload/car/msWQuouuD6sNLE8rzUbSVOm9uwRDV2l9Qs2gs6sh.jpeg"  width="400" height="400" alt="BMW X7"/>
+          <div class="portfolio-info">
+            <span class="portfolio-brand">BMW · SUV Flagship</span>
+            <div class="portfolio-model">BMW X7 M60i</div>
+            <div class="portfolio-price">R$ 780.000 · 530 cv · 7 Lugares</div>
+            <a href="agendamento.html" class="btn zm-btn-primary btn-sm mt-2">Agendar Test Drive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="zm-section text-center" style="background: var(--dark2); border-top: 1px solid var(--white10);">
+  <div class="container">
+    <span class="section-eyebrow">Próximo Passo</span>
+    <h2 class="section-title">Pronto para Experienciar o Luxo?</h2>
+    <p class="section-subtitle">Agende um test drive exclusivo e sinta a diferença em primeira mão.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+      <a href="agendamento.html" class="btn zm-btn-primary">Agendar Test Drive</a>
+      <a href="index.html#contato" class="btn zm-btn-outline">Falar com Consultor</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="zm-footer">
+  <div class="container">
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-0" style="border:none;">
+      <div class="footer-brand mb-2 mb-md-0">
+        <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="index.html" class="footer-links" style="list-style:none;"><li style="list-style:none;"><a href="index.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Home</a></li></a>
+        <a href="equipe.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Equipe</a>
+        <a href="agendamento.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Agendamento</a>
+        <a href="eventos.html" style="color:var(--white60);text-decoration:none;font-size:.82rem;">Eventos</a>
+      </div>
+      <p class="mb-0 footer-copy">&copy; 2025 Zerc Motors</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://copilot.microsoft.com/th/id/BCO.61c845ea-be4a-4f2f-91f5-a1a6064da904.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zerc Motors | Experiência de Luxo BMW & Audi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top zm-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand zm-logo" href="index.html">
+      <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+    </a>
+    <button class="navbar-toggler zm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="toggler-line"></span><span class="toggler-line"></span><span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link zm-navlink active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="portfolio.html">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="agendamento.html">Agendamento</a></li>
+        <li class="nav-item"><a class="nav-link zm-navlink" href="eventos.html">Eventos</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="zm-icon-btn"><i class="fas fa-search"></i></a>
+        <a href="#" class="zm-icon-btn"><i class="fas fa-shopping-bag"></i><span class="cart-badge">0</span></a>
+        <div class="zm-socials d-none d-lg-flex gap-2">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<section id="hero" class="zm-hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-slide slide-1">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content" data-aos="fade-up">
+              <span class="hero-eyebrow">Seleção Premium</span>
+              <h1 class="hero-title">Experiência de<br/>Luxo <span class="accent-red">BMW</span> &amp; Audi</h1>
+              <p class="hero-sub">Onde performance encontra sofisticação.</p>
+              <div class="hero-ctas d-flex gap-3 flex-wrap">
+                <a href="portfolio.html" class="btn zm-btn-primary">Ver Modelos</a>
+                <a href="#contato" class="btn zm-btn-outline">Agendar Test Drive</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide slide-2">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <span class="hero-eyebrow">Edição Limitada</span>
+              <h1 class="hero-title">BMW M Series<br/><span class="accent-red">Potência Pura</span></h1>
+              <p class="hero-sub">Engenharia alemã redefinida.</p>
+              <div class="hero-ctas d-flex gap-3 flex-wrap">
+                <a href="portfolio.html" class="btn zm-btn-primary">Explorar BMW</a>
+                <a href="agendamento.html" class="btn zm-btn-outline">Agendar Visita</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide slide-3">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <span class="hero-eyebrow">Sofisticação Total</span>
+              <h1 class="hero-title">Audi A-Series<br/><span class="accent-red">Design Eterno</span></h1>
+              <p class="hero-sub">Tecnologia e elegância em cada curva.</p>
+              <div class="hero-ctas d-flex gap-3 flex-wrap">
+                <a href="portfolio.html" class="btn zm-btn-primary">Explorar Audi</a>
+                <a href="agendamento.html" class="btn zm-btn-outline">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev zm-carousel-ctrl" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-control-next zm-carousel-ctrl" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="carousel-indicators zm-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span><div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="zm-stats-bar">
+  <div class="container-fluid">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-number">15+</span><span class="stat-label">Anos de Excelência</span>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-number">500+</span><span class="stat-label">Veículos Vendidos</span>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-number">98%</span><span class="stat-label">Clientes Satisfeitos</span>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-number">2</span><span class="stat-label">Marcas Premium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="zm-section zm-about">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="about-img-wrap">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80" alt="Bmw Luxo" class="img-fluid rounded-3"/>
+          </div>
+          <div class="about-img-badge">
+            <span class="badge-year">2009</span>
+            <span class="badge-text">Fundação</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+        <span class="section-eyebrow">Sobre Nós</span>
+        <h2 class="section-title">Excelência e Prestígio em Cada Rodada</h2>
+        <p class="section-text">Na Zerc Motors, transformamos a curadoria de luxo em uma experiência de exclusividade. Com foco em marcas de elite como BMW e Audi, oferecemos não apenas veículos, mas uma promessa de performance e sofisticação.</p>
+        <p class="section-text">Nossa missão é ser o parceiro estratégico para quem busca o melhor em cada detalhe — da escolha do modelo até a entrega final.</p>
+
+        <!-- ACCORDION -->
+        <div class="accordion zm-accordion mt-4" id="accordionSobre">
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                <i class="fas fa-trophy me-2 accent-red-icon"></i> Nossa Missão
+              </button>
+            </h2>
+            <div id="acc1" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+              <div class="accordion-body zm-acc-body">
+                Ser a referência nacional em veículos de luxo, proporcionando uma experiência de compra que transcende o convencional. Cada cliente é tratado com exclusividade e personalização total.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                <i class="fas fa-star me-2 accent-red-icon"></i> Nossos Valores
+              </button>
+            </h2>
+            <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+              <div class="accordion-body zm-acc-body">
+                Excelência, integridade, inovação e atendimento personalizado são os pilares que guiam cada interação na Zerc Motors. Acreditamos que luxo real começa no relacionamento.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
+                <i class="fas fa-shield-alt me-2 accent-red-icon"></i> Garantia & Pós-Venda
+              </button>
+            </h2>
+            <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+              <div class="accordion-body zm-acc-body">
+                Oferecemos garantia estendida, assistência técnica especializada e programa de manutenção preventiva para que seu veículo premium esteja sempre em perfeitas condições.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="equipe.html" class="btn zm-btn-primary mt-4">Conheça Nossa Equipe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="zm-section zm-products">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow">Produtos Premium</span>
+      <h2 class="section-title">Nossos Modelos de Luxo</h2>
+      <p class="section-subtitle">Explore nossa curadoria exclusiva de BMW e Audi, onde o desempenho encontra a sofisticação contemporânea.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="product-filters d-flex justify-content-center gap-2 flex-wrap mb-5">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bmw">BMW</button>
+      <button class="filter-btn" data-filter="audi">Audi</button>
+      <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="bmw">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://www.topgear.com/sites/default/files/2024/10/1-BMW-M4-review-2024-UK.jpg?w=892&h=502" alt="BMW M4" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge">BMW</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">BMW M4 Competition</h5>
+            <p class="product-desc">510 cv · 0-100 em 3,9s</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 689.000</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="bmw">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://cdn.motor1.com/images/mgl/KkBoA/s3/2019-bmw-x5-xdrive40i.webp" alt="BMW X5" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge">BMW</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">BMW X5 xDrive40i</h5>
+            <p class="product-desc">340 cv · SUV Premium</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 545.000</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="audi">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://cdn.motor1.com/images/mgl/g4MJbN/s3/audi-rs6-avant-performance.webp" alt="Audi RS6" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-audi">Audi</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Audi RS6 Avant</h5>
+            <p class="product-desc">600 cv · Avant Premium</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 720.000</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="audi">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/LOCNHEVBLVOFFCHOSYAVXVXBVQ.jpg?auth=9bb45ae885fa7fdb77a36a79113d62649f5b4516ff5eb4a9c271fa0b860e1c78&width=1600&height=872" alt="Audi R8" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-audi">Audi</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Audi R8 V10 Plus</h5>
+            <p class="product-desc">620 cv · Superesportivo</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 1.200.000</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="acessorios">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Organizador" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-acc">Acessório</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Organizador Porta-Malas</h5>
+            <p class="product-desc">Couro Premium · Universal</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 100,00</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="acessorios">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_859962-MLB109895379815_032026-F.webp" alt="Almofada" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-acc">Acessório</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Almofada Apoio Lombar</h5>
+            <p class="product-desc">Memory Foam · Ergonômico</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 90,00</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="acessorios">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://ugreendobrasil.com.br/wp-content/uploads/2024/11/7451_01.jpg" alt="Carregador" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-acc">Acessório</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Carregador Veicular Rápido</h5>
+            <p class="product-desc">65W · USB-C &amp; USB-A</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 70,00</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 product-card-wrap" data-cat="audi">
+        <div class="zm-product-card">
+          <div class="product-img-wrap">
+            <img src="https://cdn.motor1.com/images/mgl/NGOY1b/s3/audi-q8-2023.webp" alt="Audi Q8" class="img-fluid"/>
+            <div class="product-overlay">
+              <button class="btn zm-btn-primary btn-sm">Ver Detalhes</button>
+            </div>
+            <span class="product-badge badge-audi">Edição Limitada</span>
+          </div>
+          <div class="product-info">
+            <h5 class="product-name">Audi Q8 Edição Limitada</h5>
+            <p class="product-desc">340 cv · SUV de Luxo</p>
+            <div class="product-price-row d-flex justify-content-between align-items-center">
+              <span class="product-price">R$ 200.000</span>
+              <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="portfolio.html" class="btn zm-btn-outline">Ver Portfólio Completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS CAROUSEL -->
+<section id="depoimentos" class="zm-section zm-testimonials">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow">Depoimentos</span>
+      <h2 class="section-title white">Experiências que Definem o Luxo</h2>
+      <p class="section-subtitle white-sub">O que nossos clientes dizem sobre a Zerc Motors.</p>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <div class="zm-testimonial-card">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">A Zerc Motors transformou minha visão de carros de luxo. O atendimento é impecável e o know-how BMW é evidente em cada detalhe.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>RM</span></div>
+                  <div>
+                    <div class="testi-name">Ricardo Mendes</div>
+                    <div class="testi-role">Cliente BMW</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="zm-testimonial-card featured">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">Aqui não é apenas uma concessionária, é um ecossistema de tecnologia e design. O Audi A7 foi o melhor investimento da minha vida.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>JS</span></div>
+                  <div>
+                    <div class="testi-name">Juliana Silva</div>
+                    <div class="testi-role">Cliente Audi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="zm-testimonial-card">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">Profissionalismo e exclusividade em cada etapa. O processo de compra foi fluido e a entrega do carro foi impecável.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>CE</span></div>
+                  <div>
+                    <div class="testi-name">Carlos Eduardo</div>
+                    <div class="testi-role">Cliente BMW</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <div class="zm-testimonial-card">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">Nunca imaginei que comprar um carro poderia ser tão prazeroso. A equipe da Zerc cuida de cada mínimo detalhe com maestria.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>AM</span></div>
+                  <div>
+                    <div class="testi-name">Ana Paula Martins</div>
+                    <div class="testi-role">Cliente Audi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="zm-testimonial-card featured">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">O BMW M3 que adquiri na Zerc Motors superou todas as minhas expectativas. Recomendo a todos que buscam excelência.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>FC</span></div>
+                  <div>
+                    <div class="testi-name">Felipe Costa</div>
+                    <div class="testi-role">Cliente BMW</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="zm-testimonial-card">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">Equipe técnica extremamente competente. Sentiram minha necessidade e encontraram o veículo perfeito dentro das minhas expectativas.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar"><span>LO</span></div>
+                  <div>
+                    <div class="testi-name">Laura Oliveira</div>
+                    <div class="testi-role">Cliente Audi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators zm-indicators testi-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETALHES ACCORDION -->
+<section class="zm-section zm-details">
+  <div class="container">
+    <div class="row gy-5 align-items-center">
+      <div class="col-lg-6">
+        <span class="section-eyebrow">Diferenciais</span>
+        <h2 class="section-title">Detalhes da Experiência</h2>
+        <div class="accordion zm-accordion mt-4" id="accordionDetalhes">
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#det1">
+                <i class="fas fa-gauge-high me-2 accent-red-icon"></i> Engenharia de Alta Performance
+              </button>
+            </h2>
+            <div id="det1" class="accordion-collapse collapse show" data-bs-parent="#accordionDetalhes">
+              <div class="accordion-body zm-acc-body">
+                Na Zerc Motors, cada BMW e Audi é testado rigorosamente para garantir que você experimente o máximo de potência e estabilidade em cada curva. Nossos técnicos certificados asseguram a excelência.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#det2">
+                <i class="fas fa-user-tie me-2 accent-red-icon"></i> Atendimento Personalizado
+              </button>
+            </h2>
+            <div id="det2" class="accordion-collapse collapse" data-bs-parent="#accordionDetalhes">
+              <div class="accordion-body zm-acc-body">
+                Nosso time de especialistas está pronto para orientá-lo em todas as etapas do processo, desde a escolha do modelo até a entrega final, com total suporte pós-venda.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#det3">
+                <i class="fas fa-dollar-sign me-2 accent-red-icon"></i> Financiamento Exclusivo
+              </button>
+            </h2>
+            <div id="det3" class="accordion-collapse collapse" data-bs-parent="#accordionDetalhes">
+              <div class="accordion-body zm-acc-body">
+                Trabalhamos com as melhores condições de financiamento do mercado, parceiros bancários premium e condições personalizadas para que você realize o sonho do seu veículo ideal.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item zm-acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button zm-acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#det4">
+                <i class="fas fa-car me-2 accent-red-icon"></i> Test Drive Exclusivo
+              </button>
+            </h2>
+            <div id="det4" class="accordion-collapse collapse" data-bs-parent="#accordionDetalhes">
+              <div class="accordion-body zm-acc-body">
+                Oferecemos test drives agendados com roteiros premium em pistas e vias especiais, para que você experimente toda a adrenalina e conforto dos veículos antes da decisão de compra.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="details-img-grid">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Camaro Detail" class="img-fluid rounded-3 details-main-img"/>
+          <div class="details-stats-grid">
+            <div class="detail-stat"><span class="ds-num">620</span><span class="ds-unit">CV</span><span class="ds-label">Potência Máx.</span></div>
+            <div class="detail-stat"><span class="ds-num">3.5</span><span class="ds-unit">s</span><span class="ds-label">0 a 100 km/h</span></div>
+            <div class="detail-stat"><span class="ds-num">320</span><span class="ds-unit">km/h</span><span class="ds-label">Vel. Máxima</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="zm-section zm-contact">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-5">
+        <span class="section-eyebrow">Fale Conosco</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-text">Estamos prontos para atender sua consulta sobre BMW e Audi. Entre em contato conosco para agendar uma demonstração exclusiva.</p>
+        <div class="contact-info mt-4">
+          <div class="contact-item d-flex align-items-center gap-3 mb-3">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ci-label">Endereço</div>
+              <div class="ci-value">Av. das Nações, 1000 · São Paulo, SP</div>
+            </div>
+          </div>
+          <div class="contact-item d-flex align-items-center gap-3 mb-3">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ci-label">Telefone</div>
+              <div class="ci-value">(11) 9999-8888</div>
+            </div>
+          </div>
+          <div class="contact-item d-flex align-items-center gap-3 mb-3">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="ci-label">E-mail</div>
+              <div class="ci-value">contato@zercmotors.com.br</div>
+            </div>
+          </div>
+          <div class="contact-item d-flex align-items-center gap-3">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="ci-label">Horário</div>
+              <div class="ci-value">Seg–Sex: 9h–19h · Sáb: 9h–14h</div>
+            </div>
+          </div>
+        </div>
+        <div class="zm-socials d-flex gap-3 mt-4">
+          <a href="#" class="social-link large"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link large"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link large"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link large"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link large"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="zm-contact-form">
+          <div class="mb-3">
+            <label class="form-label zm-label">Nome Completo *</label>
+            <input type="text" class="form-control zm-input" placeholder="Seu nome completo"/>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-sm-6">
+              <label class="form-label zm-label">E-mail *</label>
+              <input type="email" class="form-control zm-input" placeholder="seu@email.com"/>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label zm-label">Telefone *</label>
+              <input type="tel" class="form-control zm-input" placeholder="(11) 9 9999-9999"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label zm-label">Interesse *</label>
+            <select class="form-select zm-input">
+              <option value="">Selecione o veículo de interesse</option>
+              <option>BMW M3 / M4</option>
+              <option>BMW X5 / X6 / X7</option>
+              <option>Audi A7 / A8</option>
+              <option>Audi RS6 / RS7</option>
+              <option>Audi Q8 / Q7</option>
+              <option>Acessórios Premium</option>
+              <option>Test Drive</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label zm-label">Mensagem *</label>
+            <textarea class="form-control zm-input" rows="4" placeholder="Como podemos ajudá-lo?"></textarea>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input zm-check" type="checkbox" id="privacyCheck"/>
+            <label class="form-check-label zm-check-label" for="privacyCheck">Concordo com a Política de Privacidade e desejo receber novidades da Zerc Motors.</label>
+          </div>
+          <button type="submit" class="btn zm-btn-primary w-100 btn-lg">Enviar Mensagem <i class="fas fa-arrow-right ms-2"></i></button>
+        </div>
+        <!-- MAP -->
+        <div class="zm-map mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6526!3d-23.5645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjIiUyA0NsKwMzknMDkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-3">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="zm-footer">
+  <div class="container">
+    <div class="row gy-4 mb-5">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">
+          <span class="logo-z">Z</span><span class="logo-rest">erc <span class="logo-motors">Motors</span></span>
+        </div>
+        <p class="footer-text">Concessionária premium especializada em BMW e Audi. Excelência em cada detalhe desde 2009.</p>
+        <div class="zm-socials d-flex gap-3 mt-3">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Navegação</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Marcas</h6>
+        <ul class="footer-links">
+          <li><a href="#">BMW M Series</a></li>
+          <li><a href="#">BMW X Series</a></li>
+          <li><a href="#">Audi RS Series</a></li>
+          <li><a href="#">Audi Q Series</a></li>
+          <li><a href="#">Acessórios</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Newsletter Premium</h6>
+        <p class="footer-text">Receba lançamentos exclusivos e ofertas especiais.</p>
+        <div class="footer-newsletter d-flex gap-2 mt-3">
+          <input type="email" class="form-control zm-input" placeholder="Seu melhor e-mail"/>
+          <button class="btn zm-btn-primary px-3"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0 footer-copy">&copy; 2025 Zerc Motors. Todos os direitos reservados.</p>
+      <p class="mb-0 footer-copy">Concessionária de Luxo BMW &amp; Audi</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
